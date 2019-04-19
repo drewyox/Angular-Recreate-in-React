@@ -1,0 +1,21 @@
+.blogDiv {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blogContent {
+  flex-direction: column;
+  display: flex;
+  width: 25vw;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.blogImg {
+  width:100%;
+  height: 60;
+  background-color: red;
+}
