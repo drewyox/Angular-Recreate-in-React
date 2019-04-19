@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-size: 2em;
+    padding-right: 3vw;
+  }
+  p {
+    font-size: 12px;
+    padding: 1vw;
+  }
+}
+.search {
+  input {
+    width: 15vw;
+    }
+  };
+
+
+
+.leftHeader {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content:flex-end;
+  margin-right: 0px;
+
+}
