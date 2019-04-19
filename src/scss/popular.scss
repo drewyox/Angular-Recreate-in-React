@@ -1,0 +1,12 @@
+.popularItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  p {
+    font-size: 10px;
+    width: 12.5%;
+    height: 10vh;
+    border: 1px solid black;
+  }
+}
+

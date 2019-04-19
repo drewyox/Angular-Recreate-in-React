@@ -1,0 +1,36 @@
+.container {
+  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+}
+
+.whatText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.headWhat {
+  text-align: center;
+}
+
+.whatTextCont {
+  text-align: center;
+  width: 27%;
+  h2 {
+    font-size: 2em;
+  }
+}
+
+.pTag {
+  margin: auto;
+}
+
+button {
+  width: 17%;
+  margin: auto;
+  text-align: center;
+}

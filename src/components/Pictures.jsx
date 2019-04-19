@@ -2,7 +2,16 @@ import React from 'react';
 
 function Pictures(){
   return(
-    <p>Pictures Section Working</p>
+    <div>
+      <div className="leftImg">
+      </div>
+      <div className="rightImgs">
+        <div className="rightImg">
+        </div>
+        <div className="rightImg">
+        </div>
+      </div>
+    </div>
   );
 }
 

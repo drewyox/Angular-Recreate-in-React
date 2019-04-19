@@ -1,0 +1,28 @@
+.contain {
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+}
+
+.conetentLat {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  align-items: center;
+  p {
+    padding-left: 1vw;
+  };
+  h2 {
+    padding-left: 1vw;
+    font-size: 1.5em
+  };
+}
+
+.imgStandin {
+  width: 50%;
+  background-color: red;
+  height: 100%;
+}
+

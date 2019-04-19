@@ -1,0 +1,20 @@
+.leftImg {
+  width: 35%;
+  height: 100%;
+  background-color: red;
+}
+
+.rightImgs {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+
+.rightImg {
+  background-color: green;
+  width: 15%;
+  height: 45%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
