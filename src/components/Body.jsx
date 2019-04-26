@@ -19,7 +19,6 @@ function Body(){
       <Review/>
       <Shop/>
       <What/>
-      <p>Body Section Working</p>
     </div>
   );
 }
