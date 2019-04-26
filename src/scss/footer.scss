@@ -8,9 +8,11 @@
 .columnContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 30%;
+  align-items: flex-start;
+
 }
 
 .footerDiv {
@@ -18,11 +20,17 @@
   flex-direction: column;
   height: 50vh;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
+.help{
+  margin-top: 10vh;
+}
 .topFooter {
   width: 100%;
   height: 15%;
+  text-align: center;
+  margin: auto;
 }
 
 .bottom {
@@ -37,8 +45,14 @@
 
 }
 
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .rightBotton {
   display: flex;
   flex-direction: row;
-  
+
 }

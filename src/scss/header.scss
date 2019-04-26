@@ -13,12 +13,15 @@
   }
 }
 .search {
+  margin-left: -10vw;
   input {
     width: 15vw;
     }
   };
 
-
+.header {
+  width: 100%;
+}
 
 .leftHeader {
   display: flex;

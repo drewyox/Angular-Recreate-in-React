@@ -3,7 +3,7 @@ import '../scss/header.scss';
 
 function Header(){
   return(
-    <div>
+    <div className='header'>
       <div className="row">
         <h1>Etsy</h1>
         <form className="search">
@@ -17,11 +17,11 @@ function Header(){
             <p>Sign In</p>
           </div>
           <div className="discover">
-          
+
             <p>Discover</p>
           </div>
           <div className="cart">
-            
+
             <p>Cart</p>
           </div>
         </div>

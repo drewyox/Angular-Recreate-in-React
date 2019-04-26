@@ -4,7 +4,7 @@ import '../scss/blog.scss';
 
 function Blog(){
   return(
-    <div>
+    <div className='blog'>
       <h2>Fresh From the Blog<span className='smallTitle'>Read the Blog</span></h2>
       <div className='blogDiv'>
 

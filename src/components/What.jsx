@@ -3,7 +3,7 @@ import '../scss/what.scss';
 
 function What(){
   return(
-    <div>
+    <div className='what'>
       <div className='container'>
         <div className='headWhat'>
           <h1> What Is Etsy?</h1>
@@ -25,8 +25,10 @@ function What(){
             <p>Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for support.</p>
           </div>
         </div>
-        <p className='pTag'>Have a question? Well, we’ve got some answers.</p>
-        <button type='submit'>Go to Help Center</button>
+        <div className="bottomWhat">
+          <p className='pTag'>Have a question? Well, we’ve got some answers.</p>
+          <button type='submit'>Go to Help Center</button>
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
-.container {
+.what {
   background-color: salmon;
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: auto;
   width: 100%;
 }
 
@@ -25,12 +25,22 @@
   }
 }
 
+.bottomWhat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 .pTag {
   margin: auto;
+  align-items: center;
 }
 
 button {
   width: 17%;
   margin: auto;
   text-align: center;
+  margin-top: 1vh;
 }

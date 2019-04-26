@@ -3,7 +3,7 @@ import '../scss/toolbar.scss';
 
 function ToolBar(){
   return(
-    <div>
+    <div className='toolbar'>
       <div className='row'>
         <p id='jewels'>
           Jewelry & Accessories
@@ -35,7 +35,6 @@ function ToolBar(){
           </p>
         </div>
       </div>
-      <p>ToolBar Section Working</p>
     </div>
   );
 }
