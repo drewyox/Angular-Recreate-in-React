@@ -1,17 +1,23 @@
 import React from 'react';
 import '../scss/latest.scss';
 
-class Latest extends React.Component(){
+class Latest extends React.Component{
+  
   constructor(props){
     super(props);
     this.state = {
+      displayLatest: false
+    };
+  }
 
-    }
+  handleClick(){
+    console.log('What is up my dude');
   }
 
   render(){
     return(
       <div>
+      <p onClick={this.handleClick}>Click Here to See latest items added!</p>
         <h1>Browse our Latest Collections!</h1>
         <div className='contain'>
           <div className='conetentLat'>
