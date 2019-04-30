@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function LatestContent(){
+function LatestContent(props){
   return (
     <div>
       <h1>Browse our Latest Collections!</h1>
@@ -21,10 +21,13 @@ function LatestContent(){
           </div>
         </div>
       </div>
+      <h1 onClick={props.onChangeBack}>Click here to hide content</h1>
     </div>
-  )
+  );
+}
+
+LatestContent.propTypes = {
+  onChangeBack: PropTypes.func
 };
 
-
-
-export default LatestContent
+export default LatestContent;

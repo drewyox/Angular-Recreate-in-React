@@ -12,16 +12,21 @@ class Latest extends React.Component{
       displayLatest: false
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleChangeBack = this.handleChangeBack.bind(this);
   }
 
   handleChange(){
     this.setState({displayLatest: true});
   }
+  handleChangeBack(){
+    this.setState({displayLatest: false});
+  }
 
   render(){
     let currentlyVisibleContent = null;
     if (this.state.displayLatest){
-      currentlyVisibleContent = <LatestContent/>
+      currentlyVisibleContent = <LatestContent
+        onChangeBack={this.handleChangeBack}/>;
     } else {
       currentlyVisibleContent = <Blank onChange={this.handleChange}/>;
     }
