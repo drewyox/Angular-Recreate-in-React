@@ -1,30 +1,38 @@
 import React from 'react';
 import '../scss/latest.scss';
-import LatestContent from './LatestContent'
+import LatestContent from './LatestContent';
+import Blank from './Blank';
+
 
 class Latest extends React.Component{
 
   constructor(props){
     super(props);
     this.state = {
-      // displayLatest: false
+      displayLatest: false
     };
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  // handleClick(){
-  //   this.setState({displayLatest: true});
-  //   console.log('displayLatest is set to:' + this.state.displayLatest);
-  // }
+  handleChange(){
+    this.setState({displayLatest: true});
+  }
 
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.displayLatest){
+      currentlyVisibleContent = <LatestContent/>
+    } else {
+      currentlyVisibleContent = <Blank onChange={this.handleChange}/>;
+    }
     return(
       <div>
-        <p onClick={this.handleClick}>Click Here to See latest items added!</p>
-        <LatestContent/>
+        {currentlyVisibleContent}
       </div>
     );
   }
 }
+
+
 
 export default Latest;
