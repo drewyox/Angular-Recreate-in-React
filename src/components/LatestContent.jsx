@@ -21,7 +21,7 @@ function LatestContent(props){
           </div>
         </div>
       </div>
-      <h1 onClick={props.onChangeBack}>Click here to hide content</h1>
+      <h2 onClick={props.onChangeBack}>Click here to hide Latest Items</h2>
     </div>
   );
 }
