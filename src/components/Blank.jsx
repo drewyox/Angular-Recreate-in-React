@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Blank(){
+function Blank(props){
   return (
     <div>
-      <h1>Click here to see latest items</h1>
+      <h1 onClick={props.onChange}>Click here to see latest items</h1>
     </div>
   )
 };
