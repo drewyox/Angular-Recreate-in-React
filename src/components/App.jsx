@@ -42,7 +42,8 @@ function App(){
         <Header/>
         <div className='rowB'>
           {masterToolList.map((toolbar, index) =>
-            <ToolBar p={toolbar.p}/>
+            <ToolBar p={toolbar.p}
+              key={index}/>
           )}
         </div>
         <Body/>
