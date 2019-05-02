@@ -13,7 +13,7 @@ function Popular(props){
   );
 }
 
-Popular.PropTypes = {
+Popular.propTypes = {
   text: PropTypes.string
 };
 export default Popular;

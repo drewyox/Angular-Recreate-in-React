@@ -69,6 +69,21 @@ var masterShopList = [
   }
 ];
 
+var masterWhatList = [
+  {
+    title: 'A one-of-a-kind community',
+    text: 'Etsy is a global online marketplace, where people come together to make, sell, buy, and collect unique items.'
+  },
+  {
+    title: 'Support independent creators',
+    text: 'There’s no Etsy warehouse – just millions of people selling the things they love. We make the whole process easy, helping you connect directly with makers to find something extraordinary.'
+  },
+  {
+    title: 'Peace of mind',
+    text: 'Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for support.'
+  }
+];
+
 
 function Body(){
   return(
@@ -99,8 +114,26 @@ function Body(){
             key={index}/>
         )}
       </div>
-      <What/>
-    </div>
+      
+      <div className='background'>
+        <div className='headWhat'>
+          <h1> What Is Etsy?</h1>
+          <a>Read our wonderful weird story</a>
+        </div>
+        <div className='row'>
+          {masterWhatList.map((what, index) =>
+            <What title={what.title}
+              text={what.text}
+              key={index}/>
+          )}
+          <div/>
+          </div>
+          <div className="bottomWhat">
+            <p className='pTag'>Have a question? Well, we’ve got some answers.</p>
+            <button type='submit'>Go to Help Center</button>
+          </div>
+        </div>
+      </div>
   );
 }
 
