@@ -4,3 +4,10 @@
   align-items: center;
   width: 100%;
 }
+
+.rowB {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}

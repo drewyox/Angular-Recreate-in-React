@@ -1,7 +1,6 @@
 .row {
   flex-direction: row;
   display: flex;
-  width: 80%;
 }
 
 .background {
@@ -17,9 +16,4 @@
   justify-content: center;
   margin-top: 3vh;
   margin-bottom: 3vh;
-}
-
-.pTag {
-  margin: auto;
-  align-items: center;
 }

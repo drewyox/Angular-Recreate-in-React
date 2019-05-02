@@ -1,8 +1,11 @@
 .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid black;
+  p {
+    font-size: .8em;
+  }
 }
 
 .toolbar {
