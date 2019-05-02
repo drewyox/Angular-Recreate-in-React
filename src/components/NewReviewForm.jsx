@@ -1,18 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
 
-function NewReviewForm() {
+function NewReviewForm(props) {
   let _item = null;
   let _review = null;
   let _author = null;
   
-  function handleSubmission(event) {
+  function handleSubmission(event){
     event.preventDefault();
-    console.log(_item.value);
-    console.log(_review.value);
-    console.log(_author.value);
+    props.onNewReviewSubmission({item: _item.value, review: _review.value, author: _author.value});
     _item.value = '';
     _review.value = '';
     _author.value = '';
@@ -45,5 +44,8 @@ function NewReviewForm() {
   );
 }
 
+NewReviewForm.propTypes = {
+  onNewReviewSubmission: PropTypes.func
+}
 
 export default NewReviewForm;

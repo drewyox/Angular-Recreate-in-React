@@ -14,8 +14,8 @@ function What(props){
 }
 
 What.propTypes = {
-  title1: PropTypes.title1,
-  text1: PropTypes.text1
+  title1: PropTypes.string,
+  text1: PropTypes.string
 };
 
 export default What;

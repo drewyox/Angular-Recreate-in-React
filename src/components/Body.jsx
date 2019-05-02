@@ -7,6 +7,7 @@ import Review from './Review';
 import Shop from './Shop';
 import What from './What';
 import '../scss/body.scss';
+import PropTypes from 'prop-types';
 
 
 var masterBlogList = [
@@ -85,56 +86,76 @@ var masterWhatList = [
 ];
 
 
-function Body(){
-  return(
-    <div>
+class Body extends React.Component{
+  
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterReviewList: []
+    };
+    this.handleNewSubToList = this.handleNewSubToList.bind(this);
+  }
+  
+  handleNewSubToList(newSubmission){
+    var newMasterReviewList = this.state.masterReviewList.slice();
+    newMasterReviewList.push(newSubmission);
+    this.setState({masterReviewList: newMasterReviewList});
+  }
+  
+  render(){
+    return(
       <div>
-        <h2>Fresh From the Blog<span className='smallTitle'>Read the Blog</span></h2>
-      </div>
-      <div className='row'>
-        {masterBlogList.map((blog, index) =>
-          <Blog title={blog.title}
-            subTitle={blog.subTitle}
-            content={blog.content} 
-            key={index}/>
-        )}
-      </div>
-      <Latest/>
-      <Pictures/>
-      <div className='row'>
-        {masterPopList.map((popular, index) =>
-          <Popular text={popular.text}
-            key={index}/>
-        )}
-      </div>
-      <Review/>
-      <div className='row'>
-        {masterShopList.map((shop, index) =>
-          <Shop category={shop.category}
-            key={index}/>
-        )}
-      </div>
-      
-      <div className='background'>
-        <div className='headWhat'>
-          <h1> What Is Etsy?</h1>
-          <a>Read our wonderful weird story</a>
+        <div>
+          <h2>Fresh From the Blog<span className='smallTitle'>Read the Blog</span></h2>
         </div>
         <div className='row'>
-          {masterWhatList.map((what, index) =>
-            <What title1={what.title1}
-              text1={what.text1}
+          {masterBlogList.map((blog, index) =>
+            <Blog title={blog.title}
+              subTitle={blog.subTitle}
+              content={blog.content} 
               key={index}/>
           )}
-          <div/>
         </div>
-        <div className="bottomWhat">
-          <p className='pTag'>Have a question? Well, we’ve got some answers.</p>
-          <button type='submit'>Go to Help Center</button>
+        <Latest/>
+        <Pictures/>
+        <div className='row'>
+          {masterPopList.map((popular, index) =>
+            <Popular text={popular.text}
+              key={index}/>
+          )}
+        </div>
+        
+        <Review onNewReviewSubmission={this.handleNewSubToList} reviewList={this.state.masterReviewList}/>
+        
+        <div className='row'>
+          {masterShopList.map((shop, index) =>
+            <Shop category={shop.category}
+              key={index}/>
+          )}
+        </div>
+      
+        <div className='background'>
+          <div className='headWhat'>
+            <h1> What Is Etsy?</h1>
+            <a>Read our wonderful weird story</a>
+          </div>
+          <div className='row'>
+            {masterWhatList.map((what, index) =>
+              <What title1={what.title1}
+                text1={what.text1}
+                key={index}/>
+            )}
+            <div/>
+          </div>
+          <div className="bottomWhat">
+            <p className='pTag'>Have a question? Well, we’ve got some answers.</p>
+            <button type='submit'>Go to Help Center</button>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Body;
