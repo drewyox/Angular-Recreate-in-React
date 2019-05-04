@@ -46,6 +46,6 @@ function NewReviewForm(props) {
 
 NewReviewForm.propTypes = {
   onNewReviewSubmission: PropTypes.func
-}
+};
 
 export default NewReviewForm;
