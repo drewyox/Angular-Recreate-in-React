@@ -7,7 +7,7 @@ This project had us take an older site we created in angular and translate it ov
 
 ## COMPONENT MAPPING
 
-![Image1](20190419_163555.jpg)
+![Image1](src/assets/components.jpg)
 
 
 #### By Drew Yoxsimer
@@ -19,7 +19,7 @@ This project had us take an older site we created in angular and translate it ov
 * Install React
 
 * Clone the repo onto dekstop
-  * `$ git clone https://github.com/drewyox/Angular-Recreate-in-React.git
+  * `$ git clone' https://github.com/drewyox/Angular-Recreate-in-React.git
 
 * Navigate to project folder from desktop
   * `$ cd angular-recreate-in-react`
