@@ -2,7 +2,7 @@
 
 ## Description
 
-This project had us take an older site we created in angular and translate it over to React. The site I chose was my component recreation of the Etsy hompage. The differences between react and were most apparent in the set up of the site. Angular felt much quicker once once part had been built out. Creating new components in Angular felt a lot like using a cooke cutter to just create the same thing over and over. React is similar, but each component required a bit more attention to detail. Passing information between components was much easier within React however. 
+This project had us take an older site we created in angular and translate it over to React. The site I chose was my component recreation of the Etsy hompage. The differences between react and were most apparent in the set up of the site. Angular felt much quicker once once part had been built out. Creating new components in Angular felt a lot like using a cooke cutter to just create the same thing over and over. React is similar, but each component required a bit more attention to detail. Passing information between components was much easier within React however.
 
 
 ## COMPONENT MAPPING
@@ -32,13 +32,13 @@ This project had us take an older site we created in angular and translate it ov
 
 * In browser navigate to:
   * `localhost:8080`
-  
-  
+
+
 ## FUTURE GOALS
 
 * Add in routing to different pages, despite not being present on model website.
 
-* Add more accurate syling to reflect Etsy homepage. 
+* Add more accurate syling to reflect Etsy homepage.
 
 * Include data held in a database to recreate repeated elements.
 
